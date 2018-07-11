@@ -1,0 +1,17 @@
+package:
+  name: vtk-m
+  version: "v1.2.0"
+
+source:
+  url: https://gitlab.kitware.com/vtk/vtk-m/repository/v1.2.0/archive.tar.bz2
+
+requirements:
+  build:
+    - {{ compiler('cxx')}}
+    - cmake
+    - ninja
+
+about:
+  home: https://github.com/lvandeve/lodepng
+  license: BSD 3-Clause
+  license_file: LICENSE.txt
