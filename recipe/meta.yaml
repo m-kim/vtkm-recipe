@@ -12,6 +12,6 @@ requirements:
     - ninja
 
 about:
-  home: https://github.com/lvandeve/lodepng
+  home: https://gitlab.kitware.com/vtk/vtk-m
   license: BSD 3-Clause
   license_file: LICENSE.txt
