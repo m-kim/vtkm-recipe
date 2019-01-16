@@ -1,9 +1,9 @@
 package:
   name: vtk-m
-  version: "v1.2.0"
+  version: "v1.3.0"
 
 source:
-  url: https://gitlab.kitware.com/vtk/vtk-m/repository/v1.2.0/archive.tar.bz2
+  url: https://gitlab.kitware.com/vtk/vtk-m/repository/v1.3.0/archive.tar.bz2
 
 requirements:
   build:

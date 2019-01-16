@@ -19,5 +19,8 @@ cmake -GNinja \
 
 ninja install
 
-echo -e '#pragma cling add_library_path("'$PREFIX'/lib")\n#pragma cling load("vtkm_rendering-1.2")\n#pragma cling load("vtkm_cont-1.2")' > $PREFIX/include/vtkm_config_cling.h
-echo -e '#pragma cling add_include_path("'$PREFIX'/include/vtkm-1.2/")' >> $PREFIX/include/vtkm_config_cling.h
+echo -e '#pragma cling add_library_path("'$PREFIX'/lib")\n#pragma cling load("vtkm_rendering-1.3")\n#pragma cling load("vtkm_cont-1.3")' > $PREFIX/include/vtkm_config_cling.h
+echo -e '#pragma cling add_include_path("'$PREFIX'/include/vtkm-1.3/")' >> $PREFIX/include/vtkm_config_cling.h
+
+ln -s $PREFIX/include/vtkm-1.3/vtkm/thirdparty/diy/vtkmdiy $PREFIX/include/vtkm-1.3/
+ln -s $PREFIX/include/vtkm-1.3/vtkm/thirdparty/taotuple/vtkmtaotuple $PREFIX/include/vtkm-1.3/
