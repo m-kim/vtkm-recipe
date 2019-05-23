@@ -1,5 +1,5 @@
 package:
-  name: vtk-m
+  name: vtk-m-cuda
   version: "v1.3.0"
 
 source:

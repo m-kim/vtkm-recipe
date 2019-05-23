@@ -8,12 +8,13 @@ set -x
 mkdir build-dir
 cd build-dir
 
-cmake -GNinja \
+CUDACXX=/usr/local/cuda/bin/nvcc cmake -GNinja \
     -DCMAKE_BUILD_TYPE=release \
     -DCMAKE_INSTALL_PREFIX=$PREFIX \
     -DCMAKE_INSTALL_LIBDIR=$PREFIX/lib \
     -DVTKm_ENABLE_TESTING=OFF \
     -DVTKm_ENABLE_RENDERING=ON \
+    -DVTKm_ENABLE_CUDA=ON \
     -DBUILD_TESTS=OFF \
     ..
 
