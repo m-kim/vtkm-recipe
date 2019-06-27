@@ -1,1 +1,1 @@
-Recipe for VTK-m 1.2 for Anaconda.
+Recipe for VTK-m 1.4 (CUDA) for Anaconda.
